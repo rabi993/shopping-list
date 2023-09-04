@@ -12,8 +12,8 @@ function addItem() {
   const li = document.createElement("li");
   li.innerHTML = addInput.value;
   li.style.color = lastPickedColor;
-  colorChange();
-  itemList.appendChild("li");
+  changeColor();
+  itemList.appendChild(li);
 
   addInput.value = "";
 }
@@ -28,7 +28,7 @@ function removeItem() {
 function changeColor() {
   const List = document.querySelectorAll("li");
   const lastPickedColor = colorInput.value;
-  for (let i = 0; i < List.length();i++) {
+  for (let i = 0; i < List.length;i++) {
     List[i].style.color = lastPickedColor;
   }
 }
