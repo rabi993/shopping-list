@@ -20,8 +20,8 @@ function addItem() {
 
 // remove item
 function removeItem() {
-  itemList.removeChild(li);
   let li = document.querySelector("li:last-child");
+  itemList.removeChild(li);
 }
 
 // change color
